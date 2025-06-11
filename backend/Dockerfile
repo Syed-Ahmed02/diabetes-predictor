@@ -12,6 +12,9 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY ./Data/diabetes_prediction_dataset.csv /code/diabetes_prediction_dataset.csv
 
+#copy the model
+COPY ./diabetes_prediction_model.pkl /code/diabetes_prediction_model.pkl
+
 # Copy the app directory
 COPY ./app /code/app
 
